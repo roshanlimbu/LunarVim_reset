@@ -72,11 +72,18 @@ lvim.plugins = {
     ft = "markdown",
     config = function()
       vim.g.mkdp_auto_start = 1
-      vim.g.mkdp_command_for_global = 1
-      vim.g.mkdp_open_to_the_world = 1
-      vim.g.mkdp_browserfunc = 'chrome'
     end,
-  },
-  { "folke/zen-mode.nvim" },
+  }, { "folke/zen-mode.nvim" },
   { "ThePrimeagen/harpoon" },
+  { "windwp/nvim-autopairs" },
+  { "ellisonleao/gruvbox.nvim" },
+  { "mlaursen/vim-react-snippets" },
+  {
+    "svrana/neosolarized.nvim",
+    dependencies = { "tjdevries/colorbuddy.nvim" }
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = { "tjdevries/colorbuddy.nvim" }
+  },
 }

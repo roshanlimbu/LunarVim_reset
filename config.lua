@@ -4,6 +4,9 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- Enable powershell as your default shell
+vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
+vim.cmd('source ~/.config/lvim/lua/user/bufferline.lua')
+-- vim.cmd('source ~/.config/lvim/lua/user/nvimtree.lua')
 vim.opt.shell = "pwsh.exe -NoLogo"
 vim.opt.shellcmdflag =
 "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
@@ -25,16 +28,27 @@ vim.g.clipboard = {
   },
 
 }
+-- lvim.builtin.lualine.options.theme = "gruvbox"
+lvim.transparent_window = true
+-- lvim.builtin.lualine.options.theme = "lunar"
 
+require('luasnip').filetype_extend("javascript", { "javascriptreact" })
+require('luasnip').filetype_extend("javascript", { "html" })
+require("luasnip.loaders.from_vscode").lazy_load()
 -- general
 lvim.format_on_save = {
   enabled = true,
   pattern = "*.lua",
   timeout = 1000,
 }
+lvim.colorscheme = "lunar"
 reload('user.options')
 reload('user.plugins')
 reload('user.keymaps')
 reload('user.harpoon')
 reload('user.tree')
 reload('user.spectre')
+reload('user.autopairs')
+reload('user.cmp')
+reload('user.neosolarized')
+reload('user.java')
