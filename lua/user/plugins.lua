@@ -86,4 +86,6 @@ lvim.plugins = {
     "L3MON4D3/LuaSnip",
     dependencies = { "tjdevries/colorbuddy.nvim" }
   },
+  { "VonHeikemen/lsp-zero.nvim" },
+
 }

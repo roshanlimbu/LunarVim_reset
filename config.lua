@@ -7,7 +7,6 @@
 lvim.builtin.bufferline.active = false
 vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
 vim.cmd('source ~/.config/lvim/lua/user/bufferline.lua')
--- vim.cmd('source ~/.config/lvim/lua/user/nvimtree.lua')
 vim.opt.shell = "pwsh.exe -NoLogo"
 vim.opt.shellcmdflag =
 "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
@@ -53,3 +52,4 @@ reload('user.autopairs')
 reload('user.cmp')
 reload('user.neosolarized')
 reload('user.java')
+reload('user.telescope')
