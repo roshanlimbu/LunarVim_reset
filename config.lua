@@ -4,6 +4,7 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- Enable powershell as your default shell
+lvim.builtin.bufferline.active = false
 vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
 vim.cmd('source ~/.config/lvim/lua/user/bufferline.lua')
 -- vim.cmd('source ~/.config/lvim/lua/user/nvimtree.lua')

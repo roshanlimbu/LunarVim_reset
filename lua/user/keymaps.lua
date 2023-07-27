@@ -83,7 +83,7 @@ keymap("n", "gD", "cmd>lua vim.lsp.buf.declaration()<CR>", opts)
 keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 
 keymap("n", "<leader>zn", ":ZenMode <CR>", opts) -- zenmode
-keymap("n", "<leader>gs", ":Git <CR>", opts)     -- zenmode
+keymap("n", "<leader>0", ":Git <CR>", opts)      -- fugitive
 keymap("n", "<leader>9", "gg<S-V><S-G> <CR>", opts)
 -- ys w and "", () , '' for Surrounding using vim surround
 -- ds "", () , '' for deleting the Surroundin
