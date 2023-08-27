@@ -5,9 +5,9 @@
 
 -- Enable powershell as your default shell
 lvim.builtin.bufferline.active = false
-vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
-vim.cmd('source ~/.config/lvim/lua/user/bufferline.lua')
-vim.opt.shell = "pwsh.exe -NoLogo"
+-- vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
+-- vim.cmd('source ~/.config/lvim/lua/user/bufferline.lua')
+vim.opt.shell = "zsh"
 vim.opt.shellcmdflag =
 "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
 vim.cmd [[
@@ -17,17 +17,17 @@ vim.cmd [[
   ]]
 
 -- Set a compatible clipboard manager
-vim.g.clipboard = {
-  copy = {
-    ["+"] = "win32yank.exe -i --crlf",
-    ["*"] = "win32yank.exe -i --crlf",
-  },
-  paste = {
-    ["+"] = "win32yank.exe -o --lf",
-    ["*"] = "win32yank.exe -o --lf",
-  },
+-- vim.g.clipboard = {
+--   copy = {
+--     ["+"] = "win32yank.exe -i --crlf",
+--     ["*"] = "win32yank.exe -i --crlf",
+--   },
+--   paste = {
+--     ["+"] = "win32yank.exe -o --lf",
+--     ["*"] = "win32yank.exe -o --lf",
+--   },
 
-}
+-- }
 -- lvim.builtin.lualine.options.theme = "gruvbox"
 lvim.transparent_window = true
 -- lvim.builtin.lualine.options.theme = "lunar"
@@ -42,15 +42,15 @@ lvim.format_on_save = {
   timeout = 1000,
 }
 lvim.colorscheme = "lunar"
-reload('user.options')
+-- reload('user.options')
 reload('user.plugins')
-reload('user.keymaps')
-reload('user.harpoon')
-reload('user.tree')
-reload('user.spectre')
-reload('user.autopairs')
-reload('user.cmp')
-reload('user.neosolarized')
-reload('user.java')
-reload('user.telescope')
+-- reload('user.keymaps')
+-- reload('user.harpoon')
+-- reload('user.tree')
+-- reload('user.spectre')
+-- reload('user.autopairs')
+-- reload('user.cmp')
+-- reload('user.neosolarized')
+-- reload('user.java')
+-- reload('user.telescope')
 
